@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+service TodoService{
+    rpc createTask (Task) returns (Task);
+    rpc createDay (Day) returns (Day);
+
+    rpc getTask (Task) returns (Task);
+    rpc getDay (Day) returns (Day);
+
+    rpc getAllTask (Empty) returns (Tasks);
+    rpc getAllDay (Empty) returns (Days);
+
+    rpc deleteTask(Task) returns (Empty);
+    rpc deleteDay (Day) returns (Empty);
+
+    rpc getTaskByDay (Day) returns (AllTasksOfDay);
+
+
+}
+message Task{
+    int32 id=1;
+    string todo=2;
+    int32 dayId=3;
+
+}
+
+message Day{
+    int32 id=1;
+    string date=2;
+}
+
+message Tasks{
+    repeated Task tasks=1;
+}
+
+message Days{
+    repeated Day Days=1;
+}
+
+message AllTasksOfDay{
+    int32 dayId=3;
+    repeated Task Tasks=1;
+}
+
+message Empty{
+
+}
