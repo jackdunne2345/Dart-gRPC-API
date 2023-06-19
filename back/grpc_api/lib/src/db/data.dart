@@ -1,18 +1,14 @@
-final categories = <Map<String, dynamic>>[
-  {'id': 1, 'name': 'fruits'},
-  {'id': 2, 'name': 'vegetables'},
-  {'id': 3, 'name': 'bakery'},
-  {'id': 4, 'name': 'grain'},
-  {'id': 5, 'name': 'dairy'}
+final tasks = <Map<String, dynamic>>[
+  {'id': 1, 'todo': 'walk dog', 'dayId': 1},
+  {'id': 2, 'todo': 'go to the shop', 'dayId': 1},
+  {'id': 3, 'todo': 'work out', 'dayId': 2},
+  {'id': 4, 'todo': 'write in diary', 'dayId': 2},
+  {'id': 5, 'todo': 'get hair cut', 'dayId': 3},
+  {'id': 6, 'todo': 'call the doctor', 'dayId': 3}
 ];
 
-final items = <Map<String, dynamic>>[
-  {'id': 1, 'name': 'orange', 'categoryId': 1},
-  {'id': 2, 'name': 'apple', 'categoryId': 1},
-  {'id': 3, 'name': 'cabbage', 'categoryId': 2},
-  {'id': 4, 'name': 'cucumber', 'categoryId': 2},
-  {'id': 5, 'name': 'rice', 'categoryId': 4},
-  {'id': 6, 'name': 'beans', 'categoryId': 4},
-  {'id': 7, 'name': 'cake', 'categoryId': 3},
-  {'id': 8, 'name': 'milk', 'categoryId': 5},
+final days = <Map<String, dynamic>>[
+  {'id': 1, 'date': '10/06/2023'},
+  {'id': 2, 'date': '11/06/2023'},
+  {'id': 3, 'date': '12/06/2023'},
 ];
